@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white">
       <div className="container">
-        <div className="footer-middle py-16 lg:py-28 border-b border-white/30">
+        {/* <div className="footer-middle py-16 lg:py-28 border-b border-white/30">
           <div className="grid grid-cols-12 grid-flex-row gap-5">
             <div className="col-span-12 md:col-span-6 lg:col-span-3">
               <div className="widget">
@@ -110,13 +110,14 @@ const Footer = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="footer-bottom text-sm py-10">
-          <div className="lg:flex items-center lg:space-x-16">
+          <div className="flex items-center justify-between">
+            <h2 className="text-3xl font-bold mb-2">TTB</h2>
             <p>© 2024 SWEDEN. All Rights Reserved.</p>
 
-            <ul className="lg:flex items-center lg:space-x-5 lg:space-y-0 space-y-4 lg:mt-0 mt-4">
+            {/* <ul className="lg:flex items-center lg:space-x-5 lg:space-y-0 space-y-4 lg:mt-0 mt-4">
               <li>
                 <ALink href={"/"}>Publisher</ALink>
               </li>
@@ -132,7 +133,7 @@ const Footer = () => {
               <li>
                 <ALink href={"/"}>Whistleblower channels</ALink>
               </li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

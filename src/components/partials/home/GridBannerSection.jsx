@@ -4,14 +4,6 @@ const GridBannerSection = () => {
   const Data = [
     {
       title: " Q4 e-tron",
-      imgUrl: "/images/banners/banner-1.jpg",
-      button: {
-        title: "Design & Order",
-        url: "/",
-      },
-    },
-    {
-      title: "Q6 e-tron",
       imgUrl: "/images/banners/banner-2.jpg",
       button: {
         title: "Design & Order",
@@ -29,6 +21,14 @@ const GridBannerSection = () => {
     {
       title: "Q6 e-tron",
       imgUrl: "/images/banners/banner-4.jpg",
+      button: {
+        title: "Design & Order",
+        url: "/",
+      },
+    },
+    {
+      title: "Q6 e-tron",
+      imgUrl: "/images/banners/banner-5.jpg",
       button: {
         title: "Design & Order",
         url: "/",

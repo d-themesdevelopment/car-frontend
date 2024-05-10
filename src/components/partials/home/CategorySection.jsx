@@ -8,7 +8,7 @@ const CategorySection = () => {
   return (
     <section className="py-10">
       <div className="container">
-        <div className="flex items-center space-x-10">
+        {/* <div className="flex items-center space-x-10">
           <a
             href="#"
             onClick={(e) => {
@@ -37,7 +37,7 @@ const CategorySection = () => {
           >
             Vehicle type
           </a>
-        </div>
+        </div> */}
 
         <Swiper
           modules={[Navigation, Pagination]}
@@ -64,11 +64,15 @@ const CategorySection = () => {
             },
           }}
         >
-          {new Array(9).fill(1).map((item, index) => (
-            <SwiperSlide key={index}>
+          {new Array(8).fill(1).map((item, index) => (
+            <SwiperSlide className="my-auto" key={index}>
               <div className="text-center py-10">
-                <img src={`/images/categories/${index + 1}.png`} alt="Car" />
-                <h5 className="mt-1">Q6</h5>
+                <img
+                  src={`/images/brands/${index + 1}.png`}
+                  width={160}
+                  height={160}
+                  alt="Car"
+                />
               </div>
             </SwiperSlide>
           ))}

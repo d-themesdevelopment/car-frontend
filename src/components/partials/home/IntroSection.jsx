@@ -5,7 +5,7 @@ const IntroSection = () => {
     <section
       className="intro h-screen min-h-[600px] relative flex justify-center items-end"
       style={{
-        background: "no-repeat 60%/cover url(/images/slides/slide-1.jpg)",
+        background: "no-repeat 60%/cover url(/images/banner-1.jpg)",
       }}
     >
       <div className="overlay"></div>

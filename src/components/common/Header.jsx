@@ -4,8 +4,6 @@ import MainMenu from "./partials/MainMenu";
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
-  console.log(toggle, "toggletoggletoggle");
-
   return (
     <header className="fixed w-full left-0 top-0 bg-white z-10 py-4 lg:py-0">
       <div className="container flex items-center justify-between">

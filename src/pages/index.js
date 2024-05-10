@@ -12,39 +12,43 @@ export default function Home() {
       <GridBannerSection />
 
       <section
-        className="flex items-center h-[1000px] lg:h-[1600px] mt-16"
+        className="mt-28 py-20"
         style={{
-          background: "no-repeat 60%/cover url(/images/bg-banner-1.jpg)",
+          background: "no-repeat 60%/cover url(/images/bg-banner-2.jpg)",
         }}
       >
-        <div className="container">
-          <div className="max-w-[840px] w-full bg-white p-10 lg:p-16">
-            <h3 className="text-4xl font-bold mb-7">New A3 Sportback</h3>
-            <p className="mb-10">
-              Connected, and with a design that speaks for itself.
-            </p>
+        <div className="container text-white">
+          <h3 className="text-6xl lg:text-7xl font-bold mb-4">Cars in stock</h3>
+          <p className="text-4xl lg:text-5xl font-semibold mb-14">
+            New and used for immediate delivery
+          </p>
 
-            <ALink
-              href={"/"}
-              className="flex items-center space-x-2 font-medium"
-            >
-              <span>Read more</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="8"
-                height="13"
-                viewBox="0 0 8 13"
-                class="sc-pYA-dN kHIUEP"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-width="1px"
-                  fill="none"
-                  d="M1.5,1l5.485,5.504l-5.48,5.496"
-                ></path>
-              </svg>
-            </ALink>
+          <div className="flex items-center space-x-14 mb-16">
+            <div className="flex items-center space-x-3 text-white">
+              <div className="flex items-center justify-center w-7 h-7 rounded-full border border-white">
+                <div className="w-5 h-5 rounded-full bg-white"></div>
+              </div>
+
+              <span>New cars</span>
+            </div>
+
+            <div className="flex items-center space-x-3 text-white">
+              <div className="flex items-center justify-center w-7 h-7 rounded-full border border-white">
+                <div className="w-3 h-3 rounded-full bg-white"></div>
+              </div>
+
+              <span>Used cars</span>
+            </div>
           </div>
+
+          <ALink
+            href={"/"}
+            className={
+              "text-black bg-white border border-white  px-9 py-4 inline-block"
+            }
+          >
+            Number of new cars in stock 619
+          </ALink>
         </div>
       </section>
 
@@ -93,48 +97,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        className="mt-28 py-20"
-        style={{
-          background: "no-repeat 60%/cover url(/images/bg-banner-2.jpg)",
-        }}
-      >
-        <div className="container text-white">
-          <h3 className="text-6xl lg:text-7xl font-bold mb-4">Cars in stock</h3>
-          <p className="text-4xl lg:text-5xl font-semibold mb-14">
-            New and used for immediate delivery
-          </p>
-
-          <div className="flex items-center space-x-14 mb-16">
-            <div className="flex items-center space-x-3 text-white">
-              <div className="flex items-center justify-center w-7 h-7 rounded-full border border-white">
-                <div className="w-5 h-5 rounded-full bg-white"></div>
-              </div>
-
-              <span>New cars</span>
-            </div>
-
-            <div className="flex items-center space-x-3 text-white">
-              <div className="flex items-center justify-center w-7 h-7 rounded-full border border-white">
-                <div className="w-3 h-3 rounded-full bg-white"></div>
-              </div>
-
-              <span>Used cars</span>
-            </div>
-          </div>
-
-          <ALink
-            href={"/"}
-            className={
-              "text-black bg-white border border-white  px-9 py-4 inline-block"
-            }
-          >
-            Number of new cars in stock 619
-          </ALink>
-        </div>
-      </section>
-
-      <BlogCollection />
+      {/* <BlogCollection /> */}
 
       <section className="bg-black text-white">
         <div className="grid grid-cols-12 grid-flex-row items-center gap-4 lg:gap-16">
