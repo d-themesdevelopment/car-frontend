@@ -93,11 +93,10 @@ const GridBannerSection = () => {
                     width="8"
                     height="13"
                     viewBox="0 0 8 13"
-                    class="sc-pYA-dN kHIUEP"
                   >
                     <path
                       stroke="currentColor"
-                      stroke-width="1px"
+                      strokeWidth="1px"
                       fill="none"
                       d="M1.5,1l5.485,5.504l-5.48,5.496"
                     ></path>
