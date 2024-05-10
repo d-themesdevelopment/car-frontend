@@ -17,31 +17,37 @@ const MainMenu = ({ toggle, setToggle }) => {
       >
         <li>
           <ALink href={"/"} className="block py-3 lg:py-6">
-            Models
+            Landing
           </ALink>
         </li>
 
         <li>
           <ALink href={"/"} className="block py-3 lg:py-6">
-            Electric cars
+            Shop
           </ALink>
         </li>
 
         <li>
           <ALink href={"/"} className="block py-3 lg:py-6">
-            Buy
+            Parts
           </ALink>
         </li>
 
         <li>
           <ALink href={"/"} className="block py-3 lg:py-6">
-            Own
+            Turning
           </ALink>
         </li>
 
         <li>
           <ALink href={"/"} className="block py-3 lg:py-6">
-             Stories
+            About
+          </ALink>
+        </li>
+
+        <li>
+          <ALink href={"/"} className="block py-3 lg:py-6">
+            Contact
           </ALink>
         </li>
       </ul>

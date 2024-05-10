@@ -11,8 +11,6 @@ export default function Home() {
       <CategorySection />
       <GridBannerSection />
 
-     
-
       <section
         className="flex items-center h-[1000px] lg:h-[1600px] mt-16"
         style={{
@@ -21,7 +19,7 @@ export default function Home() {
       >
         <div className="container">
           <div className="max-w-[840px] w-full bg-white p-10 lg:p-16">
-            <h3 className="text-4xl font-bold mb-7">New  A3 Sportback</h3>
+            <h3 className="text-4xl font-bold mb-7">New A3 Sportback</h3>
             <p className="mb-10">
               Connected, and with a design that speaks for itself.
             </p>
@@ -50,8 +48,6 @@ export default function Home() {
         </div>
       </section>
 
-
-
       <section className="my-36">
         <div className="container">
           <div className="grid grid-cols-12 grid-flex-row items-center gap-4 lg:gap-16">
@@ -65,7 +61,7 @@ export default function Home() {
 
             <div className="col-span-12 lg:col-span-6">
               <h3 className="text-4xl lg:text-5xl mb-7">
-                New plug-in hybrids  Q7 and Q8
+                New plug-in hybrids Q7 and Q8
               </h3>
               <h4 className="text-3xl mb-5">
                 Bigger battery, more power and longer range
@@ -83,10 +79,13 @@ export default function Home() {
                     "text-black bg-black border border-black text-white px-5 lg:px-9 py-4"
                   }
                 >
-                   Q7 TFSI e
+                  Q7 TFSI e
                 </ALink>
-                <ALink href={"/"} className={"border border-black px-5 lg:px-9 py-4"}>
-                   Q8 TFSI e
+                <ALink
+                  href={"/"}
+                  className={"border border-black px-5 lg:px-9 py-4"}
+                >
+                  Q8 TFSI e
                 </ALink>
               </div>
             </div>
@@ -103,7 +102,7 @@ export default function Home() {
         <div className="container text-white">
           <h3 className="text-6xl lg:text-7xl font-bold mb-4">Cars in stock</h3>
           <p className="text-4xl lg:text-5xl font-semibold mb-14">
-            New and used  for immediate delivery
+            New and used for immediate delivery
           </p>
 
           <div className="flex items-center space-x-14 mb-16">
@@ -138,23 +137,55 @@ export default function Home() {
       <BlogCollection />
 
       <section className="bg-black text-white">
-        <div className="grid grid-cols-12 grid-flex-row items-end gap-4 lg:gap-16">
+        <div className="grid grid-cols-12 grid-flex-row items-center gap-4 lg:gap-16">
           <div className="col-span-12 lg:col-span-6">
             <div className="p-10 lg:p-20">
-              <h4 className="text-4xl mb-5">
-                One click from your local  Partner:
-              </h4>
+              <h4 className="text-4xl mb-3">Request A Call</h4>
 
-              <h3 className="text-5xl mb-10 font-bold">My Car</h3>
+              <h3 className="text-5xl mb-5 font-bold">We call you back</h3>
 
-              <div className="flex items-center space-x-1">
-                <ALink href={"/"} className={"border border-white px-9 py-4"}>
-                  Register
-                </ALink>
-                <ALink href={"/"} className={"border border-white px-9 py-4"}>
-                  Read more
-                </ALink>
-              </div>
+              <p className="mb-10">
+                Updated exterior and increased electric range to 83 km. High
+                standard equipment with S line exterior, sports package and
+                Matrix LED headlights. Read more and experience the models.
+              </p>
+
+              <form action="#">
+                <div className="form-wrap mb-5">
+                  <input
+                    type="text"
+                    className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
+                    placeholder="Full Name *"
+                    required
+                  />
+                </div>
+
+                <div className="form-wrap mb-5">
+                  <input
+                    type="email"
+                    className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
+                    placeholder="Email Address *"
+                    required
+                  />
+                </div>
+
+                <div className="form-wrap">
+                  <textarea
+                    type="text"
+                    rows={5}
+                    className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
+                    placeholder="Email Message *"
+                    required
+                  />
+                </div>
+
+                <button
+                  type="submit"
+                  className={"border border-white px-9 py-4 mt-20"}
+                >
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
 
@@ -167,8 +198,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-
     </main>
   );
 }
