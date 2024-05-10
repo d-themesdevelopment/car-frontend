@@ -41,7 +41,7 @@ const MainMenu = ({ toggle, setToggle }) => {
 
         <li>
           <ALink href={"/"} className="block py-3 lg:py-6">
-            Audi Stories
+             Stories
           </ALink>
         </li>
       </ul>

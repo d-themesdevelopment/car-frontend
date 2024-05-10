@@ -3,9 +3,9 @@ import ALink from "@/components/common/ALink";
 const BlogCollection = () => {
   const Data = [
     {
-      title: "Audi Q4 e-tron",
+      title: " Q4 e-tron",
       imgUrl: "banner-5.jpg",
-      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the myAudi app or Plug & Charge.",
+      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the my app or Plug & Charge.",
       button: {
         title: "Design & Order",
         url: "/",
@@ -14,7 +14,7 @@ const BlogCollection = () => {
     {
       title: "Q6 e-tron",
       imgUrl: "banner-6.jpg",
-      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the myAudi app or Plug & Charge.",
+      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the my app or Plug & Charge.",
       button: {
         title: "Design & Order",
         url: "/",
@@ -23,7 +23,7 @@ const BlogCollection = () => {
     {
       title: "Q6 e-tron",
       imgUrl: "banner-7.jpg",
-      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the myAudi app or Plug & Charge.",
+      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the my app or Plug & Charge.",
       button: {
         title: "Design & Order",
         url: "/",
@@ -32,7 +32,7 @@ const BlogCollection = () => {
     {
       title: "Q6 e-tron",
       imgUrl: "banner-8.jpg",
-      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the myAudi app or Plug & Charge.",
+      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the my app or Plug & Charge.",
       button: {
         title: "Design & Order",
         url: "/",
@@ -41,7 +41,7 @@ const BlogCollection = () => {
     {
       title: "Q6 e-tron",
       imgUrl: "banner-9.png",
-      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the myAudi app or Plug & Charge.",
+      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the my app or Plug & Charge.",
       button: {
         title: "Design & Order",
         url: "/",
@@ -50,7 +50,7 @@ const BlogCollection = () => {
     {
       title: "Q6 e-tron",
       imgUrl: "banner-10.jpg",
-      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the myAudi app or Plug & Charge.",
+      desc: "Three selectable levels, access to 37,500 charging points in Sweden and easy payment via the my app or Plug & Charge.",
       button: {
         title: "Design & Order",
         url: "/",

@@ -3,7 +3,7 @@ import ALink from "@/components/common/ALink";
 const GridBannerSection = () => {
   const Data = [
     {
-      title: "Audi Q4 e-tron",
+      title: " Q4 e-tron",
       imgUrl: "/images/banners/banner-1.jpg",
       button: {
         title: "Design & Order",

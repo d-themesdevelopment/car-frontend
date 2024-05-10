@@ -137,7 +137,7 @@ const Footer = () => {
             <div className="col-span-12 md:col-span-6 lg:col-span-2">
               <div className="widget">
                 <h4 className="text-2xl font-medium mb-10">
-                  About Audi Sweden
+                  About  Sweden
                 </h4>
 
                 <ul className="text-sm space-y-4">
@@ -176,7 +176,7 @@ const Footer = () => {
 
         <div className="footer-bottom text-sm py-10">
           <div className="lg:flex items-center lg:space-x-16">
-            <p>© 2024 AUDI SWEDEN. All Rights Reserved.</p>
+            <p>© 2024  SWEDEN. All Rights Reserved.</p>
 
             <ul className="lg:flex items-center lg:space-x-5 lg:space-y-0 space-y-4 lg:mt-0 mt-4">
               <li>
