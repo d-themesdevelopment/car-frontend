@@ -57,7 +57,7 @@ export default function Home() {
           <div className="grid grid-cols-12 grid-flex-row items-center gap-4 lg:gap-16">
             <div className="col-span-12 lg:col-span-6">
               <img
-                src="/images/bg-banner-3-2.jpg"
+                src="/images/porsche1.jpg"
                 className="w-full"
                 alt="banner"
               />
