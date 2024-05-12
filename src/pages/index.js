@@ -11,7 +11,7 @@ export default function Home() {
       <CategorySection />
       <GridBannerSection />
 
-      <section
+      {/* <section
         className="mt-28 py-20"
         style={{
           background: "no-repeat 60%/cover url(/images/bg-banner-2.jpg)",
@@ -50,66 +50,67 @@ export default function Home() {
             Number of new cars in stock 619
           </ALink>
         </div>
-      </section>
+      </section> */}
 
       <section className="my-36">
         <div className="container">
           <div className="grid grid-cols-12 grid-flex-row items-center gap-4 lg:gap-16">
             <div className="col-span-12 lg:col-span-6">
               <img
-                src="/images/bg-banner-3-2.png"
+                src="/images/bg-banner-3-2.jpg"
                 className="w-full"
                 alt="banner"
               />
             </div>
 
             <div className="col-span-12 lg:col-span-6">
-              <h3 className="text-4xl lg:text-5xl mb-7">Restoring Legacy!</h3>
+              {/* <h3 className="text-4xl lg:text-5xl mb-7"></h3> */}
               {/* <h4 className="text-3xl mb-5">
                 Bigger battery, more power and longer range
               </h4> */}
               <p>
-                Explore Our Extensive Range of Spare Parts for Vintage VW and
-                Porsche Models. Rediscover the timeless charm and performance of
-                classic VW and Porsche vehicles with German Auto Parts. We are
-                proud to offer an extensive range of spare parts tailored
-                specifically for the renovation and restoration of older VW and
-                Porsche models. Whether you&apos;re a seasoned enthusiast or
-                embarking on your first restoration project, German Auto Parts
-                is your trusted partner in preserving automotive history and
-                heritage. At German Auto Parts, we understand the importance of
-                authenticity and precision when it comes to restoring vintage
-                vehicles. Our spare parts are meticulously crafted to meet or
-                exceed the original specifications, ensuring seamless
-                integration and optimal performance. We source our parts from
-                reputable manufacturers who share our passion for preserving the
-                legacy of VW and Porsche, guaranteeing uncompromising quality
-                and reliability. Dive into our comprehensive catalog featuring a
-                wide array of spare parts for vintage VW and Porsche models,
-                including iconic classics like the Beetle, Bus, 911, and more.
-                From engine components and electrical systems to body panels and
-                interior trim, we have everything you need to breathe new life
-                into your beloved classic. Whether you&apos;re tackling a full
-                restoration or simply replacing worn-out parts, German Auto
-                Parts is your one-stop destination for all your vintage VW and
-                Porsche needs. Embarking on a restoration project can be
-                daunting, but you don&apos;t have to go it alone. Our team of
-                automotive experts is here to provide guidance, support, and
-                technical assistance every step of the way. Whether you need
-                help identifying the right parts for your project or
-                troubleshooting technical challenges, we&apos;re here to ensure
-                your restoration journey is smooth and successful. At German
-                Auto Parts, we&apos;re more than just a supplier of spare parts;
-                we&apos;re custodians of automotive heritage. By preserving and
-                restoring classic VW and Porsche vehicles, we honor the legacy
-                of these iconic brands and ensure they continue to inspire
-                generations to come. Join us in our mission to keep the spirit
-                of vintage motoring alive and experience the thrill of driving a
-                piece of automotive history restored to its former glory.
-                Explore our catalog today and embark on a journey of nostalgia,
-                passion, and craftsmanship. Together, let&apos;s breathe new
-                life into automotive icons and keep the spirit of vintage
-                motoring alive for generations to come.
+                Restoring Legacy! Explore Our Extensive Range of Spare Parts for
+                Vintage VW and Porsche Models. Rediscover the timeless charm and
+                performance of classic VW and Porsche vehicles with German Auto
+                Parts. We are proud to offer an extensive range of spare parts
+                tailored specifically for the renovation and restoration of
+                older VW and Porsche models. Whether you&apos;re a seasoned
+                enthusiast or embarking on your first restoration project,
+                German Auto Parts is your trusted partner in preserving
+                automotive history and heritage. At German Auto Parts, we
+                understand the importance of authenticity and precision when it
+                comes to restoring vintage vehicles. Our spare parts are
+                meticulously crafted to meet or exceed the original
+                specifications, ensuring seamless integration and optimal
+                performance. We source our parts from reputable manufacturers
+                who share our passion for preserving the legacy of VW and
+                Porsche, guaranteeing uncompromising quality and reliability.
+                Dive into our comprehensive catalog featuring a wide array of
+                spare parts for vintage VW and Porsche models, including iconic
+                classics like the Beetle, Bus, 911, and more. From engine
+                components and electrical systems to body panels and interior
+                trim, we have everything you need to breathe new life into your
+                beloved classic. Whether you&apos;re tackling a full restoration
+                or simply replacing worn-out parts, German Auto Parts is your
+                one-stop destination for all your vintage VW and Porsche needs.
+                Embarking on a restoration project can be daunting, but you
+                don&apos;t have to go it alone. Our team of automotive experts
+                is here to provide guidance, support, and technical assistance
+                every step of the way. Whether you need help identifying the
+                right parts for your project or troubleshooting technical
+                challenges, we&apos;re here to ensure your restoration journey
+                is smooth and successful. At German Auto Parts, we&apos;re more
+                than just a supplier of spare parts; we&apos;re custodians of
+                automotive heritage. By preserving and restoring classic VW and
+                Porsche vehicles, we honor the legacy of these iconic brands and
+                ensure they continue to inspire generations to come. Join us in
+                our mission to keep the spirit of vintage motoring alive and
+                experience the thrill of driving a piece of automotive history
+                restored to its former glory. Explore our catalog today and
+                embark on a journey of nostalgia, passion, and craftsmanship.
+                Together, let&apos;s breathe new life into automotive icons and
+                keep the spirit of vintage motoring alive for generations to
+                come.
               </p>
 
               {/* <div className="flex items-center space-x-1 mt-16">

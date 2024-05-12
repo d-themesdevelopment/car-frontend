@@ -25,7 +25,7 @@ const IntroSection = () => {
             German car owners, ensuring they experience the best of both worlds:
             Swedish reliability and German precision.
           </p>
-          <div className="flex items-center space-x-1">
+          {/* <div className="flex items-center space-x-1">
             <ALink
               href={"/"}
               className={
@@ -40,7 +40,7 @@ const IntroSection = () => {
             >
               Design & Order
             </ALink>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

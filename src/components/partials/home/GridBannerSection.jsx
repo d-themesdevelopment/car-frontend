@@ -82,8 +82,8 @@ const GridBannerSection = () => {
 
               <div className={`col-span-12 md:col-span-6 px-20 py-10`}>
                 {/* <h3 className="text-3xl mb-10">{item.title}</h3> */}
-                <p className="text-lg mb-10">{item.desc}</p>
-                <ALink
+                <p className="text-xl mb-10">{item.desc}</p>
+                {/* <ALink
                   href={"/"}
                   className="flex items-center justify-start space-x-2"
                 >
@@ -101,7 +101,7 @@ const GridBannerSection = () => {
                       d="M1.5,1l5.485,5.504l-5.48,5.496"
                     ></path>
                   </svg>
-                </ALink>
+                </ALink> */}
               </div>
 
               <div
