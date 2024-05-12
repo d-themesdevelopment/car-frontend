@@ -68,7 +68,7 @@ export default function Home() {
               {/* <h4 className="text-3xl mb-5">
                 Bigger battery, more power and longer range
               </h4> */}
-              <p>
+              <p className="lg:text-xl">
                 Restoring Legacy! Explore Our Extensive Range of Spare Parts for
                 Vintage VW and Porsche Models. Rediscover the timeless charm and
                 performance of classic VW and Porsche vehicles with German Auto
