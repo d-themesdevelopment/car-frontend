@@ -114,7 +114,7 @@ const Footer = () => {
 
         <div className="footer-bottom text-sm py-10">
           <div className="flex items-center justify-between">
-            <h2 className="text-3xl font-bold mb-2">TTB</h2>
+            <h2 className="text-3xl font-bold mb-2">German Auto Parts</h2>
             <p>© 2024 SWEDEN. All Rights Reserved.</p>
 
             {/* <ul className="lg:flex items-center lg:space-x-5 lg:space-y-0 space-y-4 lg:mt-0 mt-4">

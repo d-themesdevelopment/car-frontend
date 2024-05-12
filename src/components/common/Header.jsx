@@ -43,7 +43,7 @@ const Header = () => {
               <div className="w-5 h-[1px] bg-black"></div>
             </a>
 
-            <h1 className="font-bold text-3xl text-white">TTB</h1>
+            <h1 className="font-bold text-3xl text-white">German Auto Parts</h1>
           </div>
 
           <MainMenu toggle={toggle} setToggle={setToggle} />

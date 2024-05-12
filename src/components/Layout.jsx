@@ -4,9 +4,9 @@ import Header from "./common/Header";
 const Layout = ({ children }) => {
   return (
     <div className="page-wrapper">
-      <Header />
+      {/* <Header /> */}
       {children}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
