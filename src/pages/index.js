@@ -5,6 +5,20 @@ import GridBannerSection from "@/components/partials/home/GridBannerSection";
 import IntroSection from "@/components/partials/home/IntroSection";
 
 export default function Home() {
+  async function onSubmit(event) {
+    event.preventDefault()
+ 
+    const formData = new FormData(event.currentTarget)
+    const response = await fetch('/api/sendMail', {
+      method: 'POST',
+      body: formData,
+    })
+ 
+    // Handle response if necessary
+    const data = await response.json()
+    // ...
+  }
+
   return (
     <main>
       <IntroSection />
@@ -56,11 +70,7 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-12 grid-flex-row items-center gap-4 lg:gap-16">
             <div className="col-span-12 lg:col-span-6">
-              <img
-                src="/images/porsche1.jpg"
-                className="w-full"
-                alt="banner"
-              />
+              <img src="/images/porsche1.jpg" className="w-full" alt="banner" />
             </div>
 
             <div className="col-span-12 lg:col-span-6">
@@ -139,21 +149,23 @@ export default function Home() {
       <section className="bg-black text-white">
         <div className="grid grid-cols-12 grid-flex-row items-center gap-4 lg:gap-16">
           <div className="col-span-12 lg:col-span-6">
-            <div className="p-10 lg:p-20">
-              <h4 className="text-4xl mb-3">Request A Call</h4>
+            <div className="px-5 py-10 md:p-10 lg:p-20">
+              {/* <h4 className="text-4xl mb-3">Contact Us</h4> */}
 
-              <h3 className="text-5xl mb-5 font-bold">We call you back</h3>
+              <h3 className="text-5xl mb-5 font-bold">Contact Us</h3>
 
               <p className="mb-10">
-                Updated exterior and increased electric range to 83 km. High
-                standard equipment with S line exterior, sports package and
-                Matrix LED headlights. Read more and experience the models.
+                Have a question or need more information? Send us a message!
+                Whether you&apos;re looking for a quote or have inquiries about our
+                products, we&apos;re here to help. Simply fill out the form below,
+                and we&apos;ll get back to you as soon as possible.
               </p>
 
-              <form action="#">
+              <form action="#" onSubmit={onSubmit}>
                 <div className="form-wrap mb-5">
                   <input
                     type="text"
+                    name="username"
                     className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
                     placeholder="Full Name *"
                     required
@@ -163,6 +175,7 @@ export default function Home() {
                 <div className="form-wrap mb-5">
                   <input
                     type="email"
+                    name="email"
                     className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
                     placeholder="Email Address *"
                     required
@@ -172,7 +185,8 @@ export default function Home() {
                 <div className="form-wrap">
                   <textarea
                     type="text"
-                    rows={5}
+                    rows={4}
+                    name="message"
                     className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
                     placeholder="Email Message *"
                     required
@@ -181,7 +195,7 @@ export default function Home() {
 
                 <button
                   type="submit"
-                  className={"border border-white px-9 py-4 mt-20"}
+                  className={"border border-white px-9 py-4 mt-16"}
                 >
                   Submit
                 </button>

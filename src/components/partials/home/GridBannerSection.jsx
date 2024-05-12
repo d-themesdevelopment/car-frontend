@@ -66,7 +66,7 @@ const GridBannerSection = () => {
             <React.Fragment key={index}>
               <div
                 className={`col-span-12 md:col-span-6 ${
-                  index % 2 === 0 ? "" : "hidden"
+                  index % 2 === 0 ? "" : "md:hidden"
                 }`}
               >
                 <div className="banner relative text-center flex justify-center">
@@ -80,7 +80,7 @@ const GridBannerSection = () => {
                 </div>
               </div>
 
-              <div className={`col-span-12 md:col-span-6 px-20 py-10`}>
+              <div className={`col-span-12 md:col-span-6 md:px-20 py-5 md:py-10`}>
                 {/* <h3 className="text-3xl mb-10">{item.title}</h3> */}
                 <p className="lg:text-xl mb-10">{item.desc}</p>
                 {/* <ALink
@@ -105,8 +105,8 @@ const GridBannerSection = () => {
               </div>
 
               <div
-                className={`col-span-12 md:col-span-6 ${
-                  index % 2 === 0 ? "hidden" : ""
+                className={`col-span-12 md:col-span-6  ${
+                  index % 2 === 0 ? "hidden" : "hidden md:block"
                 }`}
               >
                 <div className="banner relative text-center flex justify-center">
