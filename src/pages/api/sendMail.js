@@ -22,6 +22,13 @@ export default async function handler(req, res) {
       text: `${message}. Please email me at ${email}`,
     });
 
+    await transporter.sendMail({
+      from: `${email}`,
+      to: email,
+      subject: `Hi, ${username} Welcome to our business`,
+      text: `You was registered as a member `,
+    });
+
     res.status(200).json({ text: "Success" });
   } catch (error) {
     console.log("error", error);
