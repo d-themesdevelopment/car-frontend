@@ -3,20 +3,42 @@ import BlogCollection from "@/components/partials/home/BlogCollection";
 import CategorySection from "@/components/partials/home/CategorySection";
 import GridBannerSection from "@/components/partials/home/GridBannerSection";
 import IntroSection from "@/components/partials/home/IntroSection";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 export default function Home() {
-  async function onSubmit(event) {
-    event.preventDefault()
- 
-    const formData = new FormData(event.currentTarget)
-    const response = await fetch('/api/sendMail', {
-      method: 'POST',
-      body: formData,
-    })
- 
-    // Handle response if necessary
-    const data = await response.json()
-    // ...
+  const [loading, setLoading] = useState(false);
+  const { register, handleSubmit, formState = { errors } } = useForm();
+
+  async function handleSendMail(values) {
+    setLoading(true);
+
+    const username = values?.username;
+    const email = values?.email;
+    const message = values?.message;
+
+    console.log(username, email, message);
+
+    try {
+      const response = await fetch("/api/sendMail", {
+        method: "POST",
+        body: JSON.stringify({
+          username,
+          email,
+          message,
+        }),
+      });
+
+      if (response.ok) {
+        console.log("Success");
+        setLoading(false);
+      }
+
+      // const data = await response.json();
+    } catch (error) {
+      console.error("error:", error);
+      setLoading(false);
+    }
   }
 
   return (
@@ -156,16 +178,16 @@ export default function Home() {
 
               <p className="mb-10">
                 Have a question or need more information? Send us a message!
-                Whether you&apos;re looking for a quote or have inquiries about our
-                products, we&apos;re here to help. Simply fill out the form below,
-                and we&apos;ll get back to you as soon as possible.
+                Whether you&apos;re looking for a quote or have inquiries about
+                our products, we&apos;re here to help. Simply fill out the form
+                below, and we&apos;ll get back to you as soon as possible.
               </p>
 
-              <form action="#" onSubmit={onSubmit}>
+              <form action="#" onSubmit={handleSubmit(handleSendMail)}>
                 <div className="form-wrap mb-5">
                   <input
                     type="text"
-                    name="username"
+                    {...register("username", { required: true })}
                     className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
                     placeholder="Full Name *"
                     required
@@ -175,7 +197,7 @@ export default function Home() {
                 <div className="form-wrap mb-5">
                   <input
                     type="email"
-                    name="email"
+                    {...register("email", { required: true })}
                     className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
                     placeholder="Email Address *"
                     required
@@ -186,7 +208,7 @@ export default function Home() {
                   <textarea
                     type="text"
                     rows={4}
-                    name="message"
+                    {...register("message", { required: true })}
                     className="w-full border-b bg-black border-white/20 py-4 focus:outline-none"
                     placeholder="Email Message *"
                     required
@@ -195,9 +217,11 @@ export default function Home() {
 
                 <button
                   type="submit"
-                  className={"border border-white px-9 py-4 mt-16"}
+                  className={`border border-white px-9 py-4 mt-16 ${
+                    loading ? "pointer-events-none " : ""
+                  }`}
                 >
-                  Submit
+                  {loading ? "Sending..." : "Submit"}
                 </button>
               </form>
             </div>

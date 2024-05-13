@@ -3,31 +3,29 @@
 const nodemailer = require("nodemailer");
 
 export default async function handler(req, res) {
-  const { username, email, message } = req.body;
+  const { username, email, message } = JSON.parse(req.body);
 
-    const transporter = nodemailer.createTransport({
-      // Configure your email service provider settings here
-      service: "gmail",
-      auth: {
-        user: "gaiahealersshopify@gmail.com",
-        pass: "byep avju cnsz aqut",
-      },
+  const transporter = nodemailer.createTransport({
+    // Configure your email service provider settings here
+    service: "gmail",
+    auth: {
+      user: "gaiahealersshopify@gmail.com",
+      pass: "byep avju cnsz aqut",
+    },
+  });
+
+  try {
+    await transporter.sendMail({
+      from: `${email}`,
+      to: "info@germanautoparts.eu",
+      subject: `Hi, This is ${username}`,
+      text: `${message}. Please email me at ${email}`,
     });
 
-    try {
-      await transporter.sendMail({
-        from: `${email}`,
-        to: "info@germanautoparts.eu",
-        subject: `Hi ${username}`,
-        text: `${message}`,
-      });
+    res.status(200).json({ text: "Success" });
+  } catch (error) {
+    console.log("error", error);
 
-      return { message: "Sent the message" };
-    } catch (error) {
-      console.log("error", error);
-
-      return { message: "Failed the message" };
-    }
-
-  return { message: "Sent the message" };
+    res.status(500).json({ text: "Error" });
+  }
 }
