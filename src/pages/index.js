@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
-  const { register, handleSubmit, formState = { errors } } = useForm();
+  const { register, handleSubmit, reset, formState = { errors } } = useForm();
 
   async function handleSendMail(values) {
     setLoading(true);
@@ -33,7 +33,7 @@ export default function Home() {
       if (response.ok) {
         console.log("Success");
         setLoading(false);
-
+        reset();
         toast.success("You sent email successfully!", {
           position: "top-right",
           autoClose: 3000,
@@ -50,7 +50,7 @@ export default function Home() {
     } catch (error) {
       console.error("error:", error);
       setLoading(false);
-
+      reset();
       toast.error("🤔 failed!", {
         position: "top-right",
         autoClose: 3000,
@@ -115,7 +115,11 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-12 grid-flex-row gap-4 lg:gap-16">
             <div className="col-span-12 lg:col-span-6">
-              <img src="/images/porsche1.jpg" className="w-full sticky top-5" alt="banner" />
+              <img
+                src="/images/porsche1.jpg"
+                className="w-full sticky top-5"
+                alt="banner"
+              />
             </div>
 
             <div className="col-span-12 lg:col-span-6">
@@ -262,6 +266,7 @@ export default function Home() {
                     loading ? "pointer-events-none " : ""
                   }`}
                 >
+                  
                   {loading ? "Sending..." : "Submit"}
                 </button>
               </form>
