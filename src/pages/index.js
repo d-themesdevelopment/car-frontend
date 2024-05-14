@@ -64,6 +64,8 @@ export default function Home() {
     }
   }
 
+  const URL = "https://form.jotform.com/241340355286050";
+
   return (
     <main>
       <IntroSection />
@@ -219,16 +221,42 @@ export default function Home() {
             <div className="px-5 py-10 md:p-10 lg:p-20">
               {/* <h4 className="text-4xl mb-3">Contact Us</h4> */}
 
-              <h3 className="text-5xl mb-5 font-bold">Contact Us</h3>
+              <h3 className="text-6xl mb-5 font-bold">Contact Us</h3>
 
-              <p className="mb-10">
+              <p className="mb-16">
                 Have a question or need more information? Send us a message!
                 Whether you&apos;re looking for a quote or have inquiries about
                 our products, we&apos;re here to help. Simply fill out the form
                 below, and we&apos;ll get back to you as soon as possible.
               </p>
 
-              <form action="#" onSubmit={handleSubmit(handleSendMail)}>
+              {/* <iframe
+                id="JotFormIFrame-241340355286050"
+                title="Form"
+                onload="window.parent.scrollTo(0,0)"
+                allowtransparency="true"
+                allow="geolocation; microphone; camera; fullscreen"
+                src="https://form.jotform.com/241340355286050"
+                frameborder="0"
+                style="min-width:100%;max-width:100%;height:539px;border:none;"
+                scrolling="no"
+              ></iframe> */}
+
+              <a
+                className="border border-white px-7 lg:px-9 py-4"
+                href="https://www.jotform.com/form/241333096377358"
+                target="_blank"
+              >
+                Contact Us
+              </a>
+
+              {/* <iframe
+              className="w-full h-[500px] contact-form"
+                title="your title"
+                // src="https://www.jotform.com/form/241333096377358"
+                src="https://form.jotform.com/241341464759158"
+              ></iframe> */}
+              {/* <form action="#" onSubmit={handleSubmit(handleSendMail)}>
                 <div className="form-wrap mb-5">
                   <input
                     type="text"
@@ -266,10 +294,9 @@ export default function Home() {
                     loading ? "pointer-events-none " : ""
                   }`}
                 >
-                  
                   {loading ? "Sending..." : "Submit"}
                 </button>
-              </form>
+              </form> */}
             </div>
           </div>
 

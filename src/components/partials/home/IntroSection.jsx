@@ -15,7 +15,7 @@ const IntroSection = () => {
           <h2 className="text-6xl font-bold mb-5">
             Welcome to a New Beginning!
           </h2>
-          <p className="lg:text-lg mb-7">
+          <div className="lg:text-lg mb-7">
             {/* Our Swedish roots coupled with our specialization in German cars
             create a powerful synergy. Sweden is renowned for its commitment to
             quality, innovation, and precision engineering—values that align
@@ -47,7 +47,7 @@ const IntroSection = () => {
               coupled with German precision, ensuring our customers receive
               nothing but the highest quality products and services.
             </p>
-          </p>
+          </div>
           {/* <div className="flex items-center space-x-1">
             <ALink
               href={"/"}

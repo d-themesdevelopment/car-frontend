@@ -52,9 +52,14 @@ img {
   object-fit: cover;
 }
 
-
 .grid-container {
   .desc > p:not(:last-child) {
     margin-bottom: 20px !important;
+  }
+}
+
+.contact-form {
+  _ .form-textbox {
+    width: 100%;
   }
 }
