@@ -216,9 +216,9 @@ export default function Home() {
 
       {/* <BlogCollection /> */}
 
-      <section className="bg-[#f2eee5] text-white">
-        <div className="grid grid-cols-12 grid-flex-row items-end">
-          <div className="col-span-12 lg:col-span-6">
+      <section className="bg-black text-white">
+        <div className="grid grid-cols-12 grid-flex-row items-end h-[900px]">
+          <div className="col-span-12 lg:col-span-6 contact-form">
             <div>
               {/* <h4 className="text-4xl mb-3">Contact Us</h4> */}
 
