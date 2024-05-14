@@ -243,7 +243,7 @@ export default function Home() {
                 scrolling="no"
               ></iframe> */}
 
-              <JotformEmbed src="https://form.jotform.com/241333096377358" />
+              <JotformEmbed src="https://form.jotform.com/241342293594358" />
 
               {/* <a
                 className="border border-white px-7 lg:px-9 py-4"
@@ -303,10 +303,10 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="col-span-12 lg:col-span-6">
+          <div className="col-span-12 lg:col-span-6 h-full">
             <img
               src="/images/bg-banner-4.jpg"
-              className="w-full min-h-[600px]"
+              className="w-full min-h-[600px] h-full"
               alt="banner"
             />
           </div>
