@@ -6,6 +6,7 @@ import IntroSection from "@/components/partials/home/IntroSection";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import JotformEmbed from "react-jotform-embed";
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
@@ -215,20 +216,20 @@ export default function Home() {
 
       {/* <BlogCollection /> */}
 
-      <section className="bg-black text-white">
-        <div className="grid grid-cols-12 grid-flex-row items-center gap-4 lg:gap-16">
+      <section className="bg-[#f2eee5] text-white">
+        <div className="grid grid-cols-12 grid-flex-row items-end">
           <div className="col-span-12 lg:col-span-6">
-            <div className="px-5 py-10 md:p-10 lg:p-20">
+            <div>
               {/* <h4 className="text-4xl mb-3">Contact Us</h4> */}
 
-              <h3 className="text-6xl mb-5 font-bold">Contact Us</h3>
+              {/* <h3 className="text-6xl mb-5 font-bold">Contact Us</h3>
 
               <p className="mb-16">
                 Have a question or need more information? Send us a message!
                 Whether you&apos;re looking for a quote or have inquiries about
                 our products, we&apos;re here to help. Simply fill out the form
                 below, and we&apos;ll get back to you as soon as possible.
-              </p>
+              </p> */}
 
               {/* <iframe
                 id="JotFormIFrame-241340355286050"
@@ -242,13 +243,15 @@ export default function Home() {
                 scrolling="no"
               ></iframe> */}
 
-              <a
+              <JotformEmbed src="https://form.jotform.com/241333096377358" />
+
+              {/* <a
                 className="border border-white px-7 lg:px-9 py-4"
-                href="https://www.jotform.com/form/241333096377358"
+                href="https://form.jotform.com/241341464759158"
                 target="_blank"
               >
                 Contact Us
-              </a>
+              </a> */}
 
               {/* <iframe
               className="w-full h-[500px] contact-form"
